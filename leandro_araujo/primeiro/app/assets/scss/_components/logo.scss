@@ -1,0 +1,15 @@
+.logo {
+  margin: 0;
+  max-width: to-rem(120px);
+
+  &__link,
+  &__img {
+    background-color: #fff;
+    display: block;
+  }
+
+  &__link {
+    box-shadow: 0 0 to-rem(10px) rgba(black, .2);
+    padding: to-rem(5px);
+  }
+}

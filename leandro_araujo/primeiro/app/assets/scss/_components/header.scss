@@ -1,0 +1,13 @@
+.header {
+  &__top {
+    background-color: $grey--light;
+    border-bottom: 1px solid $grey--medium;
+  }
+
+  &__top__menu {}
+
+  &__top__button {
+    background-color: $color--primary;
+    color: #fff;
+  }
+}
