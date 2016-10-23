@@ -2,12 +2,17 @@
   &__top {
     background-color: $grey--light;
     border-bottom: 1px solid $grey--medium;
+
+    @include clearfix;
   }
 
-  &__top__menu {}
+  &__top__menu {
+    float: left;
+  }
 
   &__top__button {
     background-color: $color--primary;
     color: #fff;
+    float: right;
   }
 }

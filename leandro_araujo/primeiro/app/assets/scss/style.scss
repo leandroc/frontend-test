@@ -2,8 +2,9 @@
 // RESET & CONFIGS
 @import '_reset';
 
-// UTILS & MIXINS
+// FUNCTIONS & MIXINS
 @import '_utils/to-rem';
+@import '_utils/clearfix';
 
 // COMPONENTS STYLES
 @import '_variables';
