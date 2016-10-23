@@ -1,0 +1,13 @@
+{
+  "name": "primeiro",
+  "version": "1.0.0",
+  "description": "Teste vaga front end",
+  "author": "Leandro Araújo",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
