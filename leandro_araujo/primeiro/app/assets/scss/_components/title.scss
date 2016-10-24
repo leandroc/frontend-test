@@ -12,3 +12,14 @@
   font-size: to-rem(16px);
   font-weight: $text--bold;
 }
+
+.title--border {
+  border-bottom: 1px solid $grey--medium;
+  padding-bottom: to-rem(20px);
+  margin-bottom: to-rem(20px);
+}
+
+.title--light { font-weight: $text--light; }
+.title--normal { font-weight: $text--normal; }
+.title--semibold { font-weight: $text--semibold; }
+.title--bold { font-weight: $text--bold; }

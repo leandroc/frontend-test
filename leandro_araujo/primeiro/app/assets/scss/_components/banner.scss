@@ -54,6 +54,8 @@
   float: left;
   margin-bottom: to-rem(40px);
 
+  a { border: 3px solid $color--secondary; }
+
   a, img {
     display: block;
     width: 100%;

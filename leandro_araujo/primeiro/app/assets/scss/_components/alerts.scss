@@ -1,0 +1,26 @@
+.alert {
+  border: 1px solid $color--primary;
+  text-align: center;
+  padding: to-rem(16px);
+
+  .icon {
+    color: $color--secondary;
+    font-size: to-rem(50px);
+    display: block;
+    margin: 0 auto to-rem(16px);
+  }
+}
+
+.alert__area {
+  margin-right: -1rem;
+  margin-left: -1rem;
+  @include clearfix;
+
+  .alert {
+    min-height: to-rem(190px);
+    width: calc(33.3333% - 2rem);
+    float: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

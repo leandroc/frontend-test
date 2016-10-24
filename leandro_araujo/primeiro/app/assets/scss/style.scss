@@ -11,12 +11,16 @@
 @import '_variables';
 @import '_components/fonts';
 @import '_components/general';
+
 @import '_components/header';
+@import '_components/submenu';
+@import '_components/content';
 @import '_components/footer';
+
 @import '_components/logo';
 @import '_components/breadcrumb';
 @import '_components/icons';
 @import '_components/title';
 @import '_components/list';
 @import '_components/banner';
-@import '_components/content';
+@import '_components/alerts';
