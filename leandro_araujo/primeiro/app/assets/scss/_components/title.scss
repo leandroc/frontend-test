@@ -17,6 +17,8 @@
   border-bottom: 1px solid $grey--medium;
   padding-bottom: to-rem(20px);
   margin-bottom: to-rem(20px);
+
+  &.title--small { padding-bottom: to-rem(10px); }
 }
 
 .title--light { font-weight: $text--light; }

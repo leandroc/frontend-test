@@ -1,5 +1,56 @@
 .submenu {
-  padding-right: to-rem(16px);
+  border: 1px solid $grey--medium;
+  padding: to-rem(16px);
+  margin-right: to-rem(16px);
   width: to-rem(270px);
   float: left;
+
+  .title { color: $color--primary; }
+}
+
+.submenu__list {
+  font-size: to-rem(14px);
+
+  &,
+  li,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    padding: to-rem(2px);
+  }
+
+  & > li:before {
+    content: '▸';
+    color: $color--primary;
+    font-size: 30px;
+
+    display: inline-block;
+    height: to-rem(16px);
+    width: to-rem(16px);
+
+    margin-right: to-rem(5px);
+    position: relative;
+    top: 5px;
+  }
+
+  & > li + li { margin-top: to-rem(10px); }
+
+  & > li > a {
+    color: $color--terciary;
+    font-weight: $text--bold;
+  }
+
+  ul > li { padding-left: to-rem(23px); }
+
+  ul > li > a { color: $grey--dark; }
+
+  & > li > a:hover,
+  & > li > a:focus,
+  ul > li > a:hover,
+  ul > li > a:focus { color: $color--primary; }
 }
