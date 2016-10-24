@@ -1,18 +1,78 @@
 .header {
+  margin-bottom: to-rem(40px);
+
   &__top {
     background-color: $grey--light;
     border-bottom: 1px solid $grey--medium;
+
+    padding-top: to-rem(10px);
+    padding-bottom: to-rem(10px);
 
     @include clearfix;
   }
 
   &__top__menu {
+    font-size: to-rem(16px);
+    font-weight: $text--semibold;
+
     float: left;
   }
 
   &__top__button {
     background-color: $color--primary;
+    border-radius: to-rem(3px);
     color: #fff;
+    font-weight: $text--bold;
+    padding: to-rem(4px) to-rem(20px);
+
     float: right;
   }
+
+  &__top__button:hover {
+    background-color: darken($color--primary, 10);
+    text-decoration: none;
+  }
+
+  &__bottom {
+    padding-top: to-rem(16px);
+    padding-bottom: to-rem(16px);
+  }
+
+  &__top .container,
+  &__bottom .container {
+    padding-left: to-rem(121px);
+    position: relative;
+  }
+}
+
+.header__top .logo {
+  position: absolute;
+  top: to-rem(-10px);
+  left: 0;
+}
+
+.header__top__menu {
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li { display: inline-block; }
+
+  li + li {
+    border-left: 1px solid $grey--dark;
+    margin-left: to-rem(20px);
+    padding-left: to-rem(20px);
+  }
+
+  a {
+    color: $grey--dark;
+    display: block;
+    padding: to-rem(4px) 0;
+  }
+
+  a:hover,
+  a:focus { color: $color--primary; }
 }

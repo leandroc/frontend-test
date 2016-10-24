@@ -1,6 +1,7 @@
 // CONFIGS
 // =============================================================================
 $root-font-size: 16px;
+$container--max-width: 1140px;
 
 // COLORS
 // =============================================================================
@@ -13,9 +14,14 @@ $grey--medium: #c9c9c9;
 $grey--light: #eee;
 
 $body--background-color: #fff;
-
 $text--color: $grey--dark;
 
-// TEXT SIZES
+// TYPO
 // =============================================================================
 $body--font-size: to-rem(16px);
+
+$text--font-family: 'Open Sans', sans-serif;
+$text--light: 100;
+$text--normal: 400;
+$text--semibold: 500;
+$text--bold: 700;

@@ -1,6 +1,7 @@
 .logo {
+  width: 100%;
+  max-width: to-rem(105px);
   margin: 0;
-  max-width: to-rem(120px);
 
   &__link,
   &__img {

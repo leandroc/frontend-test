@@ -1,5 +1,17 @@
 body {
   background-color: $body--background-color;
   color: $text--color;
+  font-family: $text--font-family;
   font-size: $body--font-size;
+  font-weight: $text--normal;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: to-rem(16px);
+  padding-left: to-rem(16px);
+
+  margin: 0 auto;
+
+  @include clearfix;
 }
