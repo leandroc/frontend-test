@@ -1,0 +1,6 @@
+
+// @include font-face($font-family, $folder, $file, $svg-id, $style, $weight)
+@include font-face(Open Sans, opensans, light, open_sanslight, normal, 100);
+@include font-face(Open Sans, opensans, regular, open_sansregular, normal, 400);
+@include font-face(Open Sans, opensans, semibold, open_sanssemibold, normal, 500);
+@include font-face(Open Sans, opensans, bold, open_sansbold, normal, 700);
