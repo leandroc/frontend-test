@@ -1,0 +1,141 @@
+.footer {
+  background-color: $grey--light;
+  height: to-rem(584px); // == body margin-bottom
+  width: 100%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  &__top {
+    padding-top: to-rem(40px);
+    padding-bottom: to-rem(30px);
+  }
+
+  &__copyright {
+    background-color: $grey--medium;
+    color: $grey--dark;
+    font-size: to-rem(13px);
+    font-weight: $text--semibold;
+    text-align: center;
+
+    padding-top: to-rem(30px);
+    padding-bottom: to-rem(80px);
+  }
+
+  &__column,
+  &__options {
+    float: left;
+    padding-right: to-rem(16px);
+
+    @include clearfix;
+  }
+
+  &__column {
+    width: 60%;
+    margin-bottom: to-rem(30px);
+  }
+
+  &__column + &__column { width: 40%; }
+
+  &__options { width: 50%; }
+
+  &__column + &__column,
+  &__options + &__options {
+    padding-left: to-rem(16px);
+    padding-right: 0;
+  }
+}
+
+.footer__list {
+  margin-bottom: to-rem(40px);
+
+  @include clearfix;
+
+  ul {
+    width: 50%;
+    float: left;
+    padding-right: to-rem(16px);
+  }
+
+  ul + ul {
+    padding-left: to-rem(16px);
+    padding-right: 0;
+  }
+
+  &__more {
+    font-size: to-rem(13px);
+    font-weight: $text--bold;
+  }
+
+  a,
+  &__more { color: $grey--dark; }
+
+  a:hover,
+  a:focus,
+  &__more:hover,
+  &__more:focus { color: $color--primary; }
+}
+
+.footer__logos {
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: to-rem(10px) to-rem(20px);
+    padding-right: to-rem(40px);
+  }
+
+  li:nth-child(even) {
+    padding-left: to-rem(40px);
+    padding-right: to-rem(20px);
+  }
+
+  a, img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer__nav {
+  border-top: 1px solid $grey--medium;
+  font-size: to-rem(13px);
+  font-weight: $text--semibold;
+  clear: both;
+  padding-top: to-rem(30px);
+  margin-top: to-rem(30px);
+
+  @include clearfix;
+
+  &__left { float: left; }
+
+  &__right { float: right; }
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li { display: inline-block; }
+
+  li + li {
+    border-left: 1px solid $grey--dark;
+    padding-left: to-rem(10px);
+    margin-left: to-rem(7px);
+  }
+
+  a {
+    color: $grey--dark;
+    display: block;
+    padding: to-rem(1px) to-rem(8px);
+  }
+
+  a:hover,
+  a:focus { color: $color--primary; }
+}

@@ -4,6 +4,8 @@ body {
   font-family: $text--font-family;
   font-size: $body--font-size;
   font-weight: $text--normal;
+
+  margin-bottom: to-rem(584px + 40px); // === footer height
 }
 
 .container {
