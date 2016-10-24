@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Teste: Leandro Araújo</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section>
+    <h1>Agenda</h1>
+
+    <form name="form">
+      <h2>Adicionar novo contato</h2>
+
+      <div>
+        <label for="inputNome">Nome:</label>
+
+        <input id="inputNome" name="nome" required type="text" />
+
+        <div class="help-block">Não é permitido caracteres especiais ou números</div>
+      </div>
+
+      <div>
+        <label for="inputTelefone">Telefone:</label>
+
+        <input id="inputTelefone" name="telefone" required type="text" />
+
+        <div class="help-block">Digite seu telefone no formato: (nn) nnnn-nnnn</div>
+      </div>
+
+      <div>
+        <label for="inputEmail">E-mail:</label>
+
+        <input id="inputEmail" name="email" required type="text" />
+
+        <div class="help-block">E-mail escrito de forma incorreta</div>
+      </div>
+
+      <button id="reset" type="reset">Cancelar</button>
+      <button type="submit">Salvar</button>
+    </form>
+
+    <div id="agenda" class="hide">
+      <ul></ul>
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
